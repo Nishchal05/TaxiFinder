@@ -1,5 +1,5 @@
 import { SignUp } from "@clerk/nextjs";
-import banner from "@/public/banner.jpg";
+import {banner} from "@/public/banner.jpg";
 export default function Page() {
   return(
     <div>
