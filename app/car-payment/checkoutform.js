@@ -48,7 +48,7 @@ const CheckOutForm = ({ amount }) => {
       const { error: stripeError } = await stripe.confirmPayment({
         elements,
         confirmParams: {
-          return_url: 'http://localhost:3000/', 
+          return_url: 'http://taxifinder.vercel.app/', 
         },
         clientSecret: clientSecret, 
       });
