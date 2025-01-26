@@ -14,9 +14,9 @@ const Header = () => {
     <div className=' flex justify-between p-4 shadow-xl'>
     <div className=' flex items-center gap-3'><img src={logo.src} alt='logo' width={40}/>
     <h2 className=' text-black font-bold text-3xl'>TaxiHub</h2></div>
-    <div className=' flex gap-3 items-center'>
+    <div className='flex gap-3 items-center'>
         {content.map((item,index)=>(
-            <div key={index} className=' text-black cursor-pointer hover:opacity-20'>
+            <div key={index} className='hidden md:flex text-black cursor-pointer hover:opacity-20'>
                 {item.name}
             </div>
         ))}
